@@ -106,6 +106,8 @@ public final class BarcodeCaptureActivity extends AppCompatActivity implements B
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        // Set the Secure flag for this Window
+        getWindow().setFlags(LayoutParams.FLAG_SECURE, LayoutParams.FLAG_SECURE);
         try {
             setContentView(R.layout.barcode_capture);
 
